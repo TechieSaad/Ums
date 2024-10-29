@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALCULATOR</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    
+
+    <!-- <h1>CALCULATOR</h1>
+
+    <table >
+        <tr>
+            <th colspan="4" class="inputNum">
+                <input type="text" placeholder="Enter" disabled>
+            </th>
+        </tr>
+        <tr>
+            <th colspan="2" onclick="empty()">CLR</th>
+            <th onclick="getValue(event)">/</th>
+            <th onclick="getValue(event)">*</th>
+        </tr>
+        <tr>
+            <th onclick="getValue(event)">7</th>
+            <th onclick="getValue(event)">8</th>
+            <th onclick="getValue(event)">9</th>
+            <th onclick="getValue(event)">-</th>
+        </tr>
+        <tr>
+            <th onclick="getValue(event)">4</th>
+            <th onclick="getValue(event)">5</th>
+            <th onclick="getValue(event)">6</th>
+            <th onclick="getValue(event)">+</th>
+        </tr>
+        <tr>
+            <th onclick="getValue(event)">1</th>
+            <th onclick="getValue(event)">2</th>
+            <th onclick="getValue(event)">3</th>
+            <th rowspan="2" onclick="result()">=</th>
+        </tr>
+        <tr>
+            <th onclick="getValue(event)">.</th>
+            <th onclick="getValue(event)">0</th>
+            <th onclick="getValue(event)">%</th>
+        </tr>
+    </table> -->
+
+
+    <div class="calculator">
+        <input type="text" placeholder="0" id="inputBox">
+
+        <div>
+            <button onclick="empty()" class="operator">AC</button>
+            <button onclick="del()" class="operator">DEL</button>
+            <button onclick="getValue(event)" class="operator">%</button>
+            <button onclick="getValue(event)" class="operator"> /</button>
+        </div>
+        <div>
+            <button onclick="getValue(event)">7</button>
+            <button onclick="getValue(event)">8</button>
+            <button onclick="getValue(event)">9</button>
+            <button onclick="getValue(event)" class="operator">*</button>
+        </div>
+        <div>
+            <button onclick="getValue(event)">4</button>
+            <button onclick="getValue(event)">5</button>
+            <button onclick="getValue(event)">6</button>
+            <button onclick="getValue(event)" class="operator">-</button>
+        </div>
+        <div>
+            <button onclick="getValue(event)">1</button>
+            <button onclick="getValue(event)">2</button>
+            <button onclick="getValue(event)">3</button>
+            <button onclick="getValue(event)" class="operator">+</button>
+        </div>
+        <div>
+            <button onclick="getValue(event)">00</button>
+            <button onclick="getValue(event)">0</button>
+            <button onclick="getValue(event)" class="operator">.</button>
+            <button onclick="result()" class="equalbtn">=</button>
+        </div>
+    </div>
+
+    <script src="./calci.js"></script>
+</body>
+</html>
